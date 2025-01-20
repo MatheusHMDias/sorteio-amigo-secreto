@@ -6,9 +6,9 @@
 
 O projeto Amigo Secreto é uma aplicação web interativa que realiza o sorteio de amigo secreto. Com ele, você pode adicionar os nomes dos participantes e realizar um sorteio aleatório para determinar quem será o "amigo secreto" de cada pessoa. O projeto é ideal para eventos de confraternização e festividades.
 
-# :hammer: Funcionalidades do projeto
+# :hammer: Funcionalidade do projeto
 
-- `Funcionalidade 1`: O sistema permite fazer o cadastro de uma lista de amigos e realizar um sorteio de forma aleatória para definir o 'amigo secreto'.
+- O sistema permite fazer o cadastro de uma lista de amigos e realizar um sorteio de forma aleatória para definir o 'amigo secreto'.
 
 # Tecnologias Utilizadas
 
