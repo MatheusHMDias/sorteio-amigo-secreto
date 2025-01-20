@@ -1,7 +1,7 @@
 let listaDeAmigos = [];
 
 function adicionarAmigo() {
-    nome = document.querySelector('input').value;
+    let nome = document.querySelector('input').value;
     
     if (nome == '') {
         return alert('Por favor, insira um nome.');
@@ -13,7 +13,7 @@ function adicionarAmigo() {
 }
 
 function limparCampo() {
-    campoNome = document.querySelector('input');
+    let campoNome = document.querySelector('input');
     campoNome.value = '';
 }
 
