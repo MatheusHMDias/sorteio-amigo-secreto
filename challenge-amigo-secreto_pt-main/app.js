@@ -32,6 +32,10 @@ function exibirListaDeAmigos() {
 }
 
 function sortearAmigo() {
+
+    let lista = document.getElementById('listaAmigos');
+    lista.innerHTML = '';
+    
     if (listaDeAmigos.length === 0) {
         return alert('Nenhum amigo encontrado.')
     }
@@ -43,9 +47,6 @@ function sortearAmigo() {
     resultadoSorteio.innerHTML = '';
 
     let elementoResultado = document.createElement('li');
-    elementoResultado.innerHTML = amigoSorteado;
+    elementoResultado.innerHTML = `O amigo secreto sorteado é: ${amigoSorteado}`;
     resultadoSorteio.appendChild(elementoResultado);
-    
 }
-
-    
