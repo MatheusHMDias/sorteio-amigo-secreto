@@ -1,4 +1,4 @@
-let listaAmigos = [];
+let listaDeAmigos = [];
 
 function adicionarAmigo() {
     nome = document.querySelector('input').value;
@@ -6,7 +6,7 @@ function adicionarAmigo() {
     if (nome == '') {
         return alert('Por favor, insira um nome.');
     } else {
-        listaAmigos.push(nome);
+        listaDeAmigos.push(nome);
     }
     limparCampo()
     exibirListaDeAmigos();
@@ -22,11 +22,28 @@ function exibirListaDeAmigos() {
     lista.innerHTML = ''; 
 
     // Loop para iterar sobre o array e criar elementos <li> para cada amigo
-    for (let i = 0; i < listaAmigos.length; i++) {
+    for (let i = 0; i < listaDeAmigos.length; i++) {
         let elementoLista = document.createElement('li'); // O método createElement() cria um elemento <li>
-        elementoLista.innerHTML = listaAmigos[i];
+        elementoLista.innerHTML = listaDeAmigos[i];
         lista.appendChild(elementoLista); // O método appendChild adiciona o elemento <li> ao final do elemento selecionado na linha 21 (lista)
     }
+}
+
+function sortearAmigo() {
+    if (listaDeAmigos == []) {
+        return alert('Nenhum amigo encontrado.')
+    }
+
+    let numeroAleatorio = parseInt(Math.random() * listaDeAmigos.length);
+    let amigoSorteado = listaDeAmigos[numeroAleatorio];
+
+    let resultadoSorteio = document.getElementById('resultado');
+    resultadoSorteio.innerHTML = '';
+
+    let elementoResultado = document.createElement('li');
+    elementoResultado.innerHTML = amigoSorteado;
+    resultadoSorteio.appendChild(elementoResultado);
+    
 }
 
     
