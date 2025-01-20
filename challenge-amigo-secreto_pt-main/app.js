@@ -5,6 +5,8 @@ function adicionarAmigo() {
     
     if (nome == '') {
         return alert('Por favor, insira um nome.');
+    } else if (listaDeAmigos.includes(nome)) {
+        return alert('Este nome já foi adicionado.');
     } else {
         listaDeAmigos.push(nome);
     }
