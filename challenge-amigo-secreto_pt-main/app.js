@@ -30,7 +30,7 @@ function exibirListaDeAmigos() {
 }
 
 function sortearAmigo() {
-    if (listaDeAmigos == []) {
+    if (listaDeAmigos.length === 0) {
         return alert('Nenhum amigo encontrado.')
     }
 
