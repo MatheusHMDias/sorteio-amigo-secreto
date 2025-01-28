@@ -27,4 +27,3 @@ Após baixar o projeto, você pode abrir em qualquer navegador:
 * Procure o local onde o projeto está e o selecione (Caso o projeto seja baixado via zip, é necessário extraí-lo antes de procurá-lo).
 * Você pode abrir o projeto diretamente no navegador. Basta acessar o arquivo index.html em sua pasta local.
 * O projeto não requer servidores ou instalações extras. Apenas abra o arquivo `index.html` em qualquer navegador de sua preferência.
-
